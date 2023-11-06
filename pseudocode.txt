@@ -1,0 +1,33 @@
+FUNCTION getComputerChoice
+    create a list named choices containing rock, paper, scissors
+    generate a random number from 0-2
+    use the random number to index the list
+    return the indexed element
+
+FUNCTION playRound
+    create a variable named playerWinText that contains "You Win! playerSelection beats computerSelection"
+    create a variable named playerLoseText that contains "You Lose! computerSelection beats playerSelection"
+    create a variable named playerDrawText that contains "Draw! Both players chose playerSelection"
+
+    IF player choice is equal to computer choice
+        RETURN playerDrawText
+    
+    IF player choice is rock
+        IF computer choice is paper
+            RETURN playerLoseText
+        ELSE 
+            RETURN playerWinText
+    
+    IF player choice is paper
+        IF computer choice is scissors
+            RETURN playerLoseText
+        ELSE 
+            RETURN playerWinText
+    
+    IF player choice is scissors
+        IF computer choice is rock
+            RETURN playerLoseText
+        ELSE 
+            RETURN playerWinText
+
+FUNCTION game
